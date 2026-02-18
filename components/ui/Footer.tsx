@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="space-y-4">
           <Link
             href="/"
-            className="text-4xl font-black italic tracking-tighter text-white hover:text-[#FFD400] transition-colors"
+            className="text-4xl font-black italic tracking-tighter text-white hover:text-white transition-colors"
           >
             {siteData.name}
           </Link>
@@ -23,7 +23,7 @@ export default function Footer() {
         {/* Links */}
         <div className="flex flex-wrap gap-8 md:gap-16">
           <div className="space-y-4">
-            <h4 className="font-bold text-[#FFD400] text-sm uppercase tracking-widest">
+            <h4 className="font-bold text-white text-sm uppercase tracking-widest">
               Connect
             </h4>
             <ul className="space-y-2">
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-bold text-[#FFD400] text-sm uppercase tracking-widest">
+            <h4 className="font-bold text-white text-sm uppercase tracking-widest">
               Explore
             </h4>
             <ul className="space-y-2">

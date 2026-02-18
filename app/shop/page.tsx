@@ -93,7 +93,7 @@ export default function ShopPage() {
                   onClick={() => setActiveCategory(cat.value)}
                   className={`px-5 py-2 text-xs font-bold uppercase tracking-widest border transition-all duration-200 ${
                     activeCategory === cat.value
-                      ? "bg-[#FFD400] text-black border-[#FFD400]"
+                      ? "bg-white text-black border-white"
                       : "bg-transparent text-neutral-400 border-neutral-700 hover:border-white hover:text-white"
                   }`}
                 >
@@ -134,7 +134,7 @@ export default function ShopPage() {
                         }}
                         className={`block w-full text-left px-5 py-3 text-xs font-bold uppercase tracking-widest transition-colors ${
                           sortBy === opt.value
-                            ? "text-[#FFD400] bg-neutral-800"
+                            ? "text-white bg-neutral-800"
                             : "text-neutral-400 hover:text-white hover:bg-neutral-800"
                         }`}
                       >
@@ -197,7 +197,7 @@ export default function ShopPage() {
                           onClick={() => setActiveCategory(cat.value)}
                           className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border transition-all duration-200 ${
                             activeCategory === cat.value
-                              ? "bg-[#FFD400] text-black border-[#FFD400]"
+                              ? "bg-white text-black border-white"
                               : "bg-transparent text-neutral-400 border-neutral-700 hover:border-white hover:text-white"
                           }`}
                         >
@@ -219,7 +219,7 @@ export default function ShopPage() {
                           onClick={() => setSortBy(opt.value)}
                           className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border transition-all duration-200 ${
                             sortBy === opt.value
-                              ? "bg-[#FFD400] text-black border-[#FFD400]"
+                              ? "bg-white text-black border-white"
                               : "bg-transparent text-neutral-400 border-neutral-700 hover:border-white hover:text-white"
                           }`}
                         >
@@ -281,7 +281,7 @@ export default function ShopPage() {
                   setActiveCategory("all");
                   setSortBy("newest");
                 }}
-                className="mt-6 px-8 py-3 bg-[#FFD400] text-black text-xs font-bold uppercase tracking-widest hover:bg-[#E6BF00] transition-colors"
+                className="mt-6 px-8 py-3 bg-white text-black text-xs font-bold uppercase tracking-widest hover:bg-neutral-200 transition-colors"
               >
                 Clear Filters
               </button>

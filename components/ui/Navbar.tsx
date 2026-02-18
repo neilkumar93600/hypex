@@ -34,10 +34,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-3xl font-black italic tracking-tighter text-white hover:text-[#FFD400] transition-colors"
+          className="text-3xl font-black italic tracking-tighter text-white hover:text-white transition-colors"
         >
           {siteData.name}
-          <span className="text-[#FFD400] text-sm not-italic ml-1 align-top">
+          <span className="text-white text-sm not-italic ml-1 align-top">
             ®
           </span>
         </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
               className="text-sm font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FFD400] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
               US / USD
             </span>
           </div>
-          <button className="hover:text-[#FFD400] transition-colors hidden md:block">
+          <button className="hover:text-white transition-colors hidden md:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -115,7 +115,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-4xl font-black uppercase tracking-tighter text-white hover:text-[#FFD400] transition-colors"
+                  className="text-4xl font-black uppercase tracking-tighter text-white hover:text-white transition-colors"
                 >
                   {link.name}
                 </Link>

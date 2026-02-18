@@ -16,9 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HYPEX | WEAR THE HYPE",
-  description:
-    "Limited edition streetwear collection with drop urgency. Shop now before it's gone.",
+  title: "VOID | MODERN CLOTHING",
+  description: "Premium modern streetwear and essentials.",
 };
 
 export default function RootLayout({
@@ -29,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white selection:bg-[#FAFF00] selection:text-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white selection:bg-white selection:text-black`}
       >
         <Navbar />
         <main className="min-h-screen pt-20">{children}</main>

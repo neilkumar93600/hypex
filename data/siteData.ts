@@ -33,49 +33,50 @@ export interface Collection {
     description?: string;
     image: string;
     link: string;
+    category?: string;
 }
 
 export const siteData = {
-    name: "HYPEX",
-    slogan: "WEAR THE HYPE.",
+    name: "VOID",
+    slogan: "MODERN ESSENTIALS.",
     announcement: "FREE SHIPPING ON ORDERS OVER $150 | WORLDWIDE DELIVERY",
 
     hero: {
-        title: "SUMMER DROP '26",
-        subtitle: "LIMITED EDITION STREETWEAR COLLECTION. ONCE IT'S GONE, IT'S GONE FOREVER.",
-        cta: "SHOP THE DROP",
+        title: "SPRING COLLECTION '26",
+        subtitle: "PREMIUM STREETWEAR FOR THE MODERN ERA. QUALITY THAT SPEAKS FOR ITSELF.",
+        cta: "SHOP NOW",
         image: "/hero-bg.webp",
     },
 
     drop: {
-        title: "NEXT DROP IN",
-        date: "2026-03-01T00:00:00",
+        title: "FEATURED ITEM",
+        date: "2026-03-01T00:00:00", // Kept for type safety but ignored in UI
         productName: "VOID RUNNER V2",
         productImage: "/drop-shoe.webp",
         price: "$220",
-        stockStatus: "LOW STOCK",
-        cta: "GET NOTIFIED",
+        stockStatus: "IN STOCK",
+        cta: "SHOP NOW",
     },
 
     collections: [
         {
             id: "new-arrivals",
             title: "NEW ARRIVALS",
-            description: "Fresh drops just landed. Be the first to cop.",
+            description: "Latest styles just landed. Explore the collection.",
             image: "/collection-new.webp",
             link: "/collections/new-arrivals",
         },
         {
             id: "best-sellers",
             title: "BEST SELLERS",
-            description: "The pieces everyone's wearing. Don't sleep on these.",
+            description: "Customer favorites. Verified quality.",
             image: "/collection-best.webp",
             link: "/collections/best-sellers",
         },
         {
             id: "accessories",
             title: "ACCESSORIES",
-            description: "Finish the fit. Beanies, bags, chains and more.",
+            description: "Complete your look. Beanies, bags, and more.",
             image: "/collection-accessories.webp",
             link: "/collections/accessories",
         },
@@ -150,16 +151,16 @@ export const siteData = {
             originalPrice: 180,
             image: "/product-jacket.webp",
             images: ["/product-jacket.webp", "/product-jacket-2.webp", "/product-jacket-3.webp"],
-            tag: "LIMITED",
+            tag: "SALE",
             link: "/product/distressed-denim-jacket",
             category: "best-sellers",
-            description: "Hand-distressed selvedge denim jacket. Each piece is unique with custom wash treatment. Limited run of 200 units.",
+            description: "Hand-distressed selvedge denim jacket. Each piece is unique with custom wash treatment.",
             details: [
                 "14oz Japanese selvedge denim",
                 "Hand-distressed finishing",
                 "Copper hardware",
                 "Interior pocket",
-                "Limited edition - 200 units",
+                "Premium denim",
             ],
             sizes: ["S", "M", "L", "XL"],
             colors: [
@@ -181,7 +182,7 @@ export const siteData = {
             tag: "",
             link: "/product/streetwear-beanie",
             category: "accessories",
-            description: "Ribbed knit beanie with embroidered HYPEX logo. One size fits all. The finishing touch for any fit.",
+            description: "Ribbed knit beanie with embroidered VOID logo. One size fits all. The finishing touch for any fit.",
             details: [
                 "100% acrylic knit",
                 "Embroidered logo",
@@ -236,9 +237,9 @@ export const siteData = {
             tag: "BESTSELLER",
             link: "/product/graphic-crewneck-tee",
             category: "best-sellers",
-            description: "Heavyweight 250gsm cotton tee with oversized back graphic. Boxy fit with dropped shoulders.",
+            description: "Heavyweight 240gsm cotton tee with oversized back graphic. Boxy fit with dropped shoulders.",
             details: [
-                "250gsm premium cotton",
+                "240gsm premium cotton",
                 "Boxy oversized fit",
                 "Dropped shoulders",
                 "Screen-printed graphic",
@@ -264,10 +265,10 @@ export const siteData = {
             tag: "",
             link: "/product/chain-link-necklace",
             category: "accessories",
-            description: "Stainless steel chain link necklace with HYPEX pendant. 20-inch length. Water and tarnish resistant.",
+            description: "Stainless steel chain link necklace with VOID pendant. 20-inch length. Water and tarnish resistant.",
             details: [
                 "316L stainless steel",
-                "HYPEX branded pendant",
+                "VOID branded pendant",
                 "20-inch length",
                 "Lobster clasp closure",
                 "Water resistant",
@@ -296,7 +297,7 @@ export const siteData = {
                 "Multiple compartments",
                 "Quick-release buckle",
                 "Adjustable strap",
-                "Reflective HYPEX logo",
+                "Reflective VOID logo",
             ],
             sizes: ["ONE SIZE"],
             colors: [
@@ -318,12 +319,12 @@ export const siteData = {
             { label: "Happy Customers", value: "12K+" },
             { label: "5-Star Reviews", value: "2.4K" },
             { label: "Countries", value: "45+" },
-            { label: "Drops Sold Out", value: "100%" },
+            { label: "Returns", value: "Hassle Free" },
         ],
         testimonials: [
             { author: "JAKE M.", text: "Best quality streetwear I've found online. Period.", rating: 5, avatar: "JM" },
             { author: "SARAH K.", text: "Everything I've ordered has been fire. Shipping was fast too.", rating: 5, avatar: "SK" },
-            { author: "DEON W.", text: "The limited drops are worth the hype. Quality is insane.", rating: 5, avatar: "DW" },
+            { author: "DEON W.", text: "Worth the price. Quality is insane.", rating: 5, avatar: "DW" },
             { author: "NINA P.", text: "Finally a brand that matches the photos. True to size, premium feel.", rating: 5, avatar: "NP" },
         ],
     },
@@ -353,17 +354,17 @@ export const siteData = {
 
     pages: {
         about: {
-            title: "ABOUT HYPEX",
+            title: "ABOUT VOID",
             subtitle: "Born from the streets. Built for the culture.",
             story: [
-                "HYPEX started in 2024 with a simple idea: streetwear should be premium without the premium price tag. We saw a gap between fast fashion and luxury — and we filled it.",
-                "Every piece we make is designed in-house, tested on the streets, and produced in limited runs. When it's gone, it's gone. No restocks, no compromises.",
-                "We're not just a brand. We're a movement. Every drop is a moment. Every piece is a statement.",
+                "VOID started in 2024 with a simple idea: streetwear should be premium without the premium price tag. We saw a gap between fast fashion and luxury — and we filled it.",
+                "Every piece we make is designed in-house, tested on the streets, and produced with care.",
+                "We're not just a brand. We're a movement. Every piece is a statement.",
             ],
             values: [
-                { title: "LIMITED RUNS", description: "Every drop is produced in limited quantities. Scarcity drives value." },
-                { title: "PREMIUM QUALITY", description: "We use the same factories as luxury brands. You get the quality without the markup." },
-                { title: "STREET TESTED", description: "Every design is worn and tested before it drops. If we wouldn't wear it, we don't sell it." },
+                { title: "QUALITY FIRST", description: "Precision engineering in every stitch. We prioritize durability and comfort above all else." },
+                { title: "SUSTAINABLE PRACTICES", description: "Ethically sourced materials and fair labor practices are at the core of our business." },
+                { title: "STREET TESTED", description: "Every design is worn and tested before it launches. If we wouldn't wear it, we don't sell it." },
                 { title: "FAST SHIPPING", description: "Orders ship within 24 hours. Worldwide delivery in 3-7 business days." },
             ],
         },
@@ -382,7 +383,7 @@ export const siteData = {
                 { title: "RETURN WINDOW", description: "30-day return window from delivery date. Items must be unworn with tags attached." },
                 { title: "EXCHANGES", description: "Free exchanges for different sizes. Subject to availability." },
                 { title: "REFUND PROCESS", description: "Refunds processed within 5-7 business days after we receive your return." },
-                { title: "NON-RETURNABLE", description: "Sale items, accessories, and limited edition drops are final sale." },
+                { title: "FINAL SALE", description: "Clearance items and accessories are final sale." },
             ],
         },
     },
@@ -399,6 +400,6 @@ export const siteData = {
             { name: "TIKTOK", href: "#" },
             { name: "X", href: "#" },
         ],
-        copyright: "\u00A9 2026 HYPEX. ALL RIGHTS RESERVED.",
+        copyright: "\u00A9 2026 VOID. ALL RIGHTS RESERVED.",
     },
 };

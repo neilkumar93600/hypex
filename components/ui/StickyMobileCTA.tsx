@@ -30,11 +30,11 @@ export default function StickyMobileCTA() {
               <span className="text-white font-bold uppercase text-sm line-clamp-1">
                 {siteData.drop.productName}
               </span>
-              <span className="text-[#FFD400] font-mono text-xs">
+              <span className="text-white font-mono text-xs">
                 {siteData.drop.price}
               </span>
             </div>
-            <button className="bg-[#FFD400] text-black font-bold uppercase py-3 px-6 text-sm whitespace-nowrap">
+            <button className="bg-white text-black font-bold uppercase py-3 px-6 text-sm whitespace-nowrap">
               {siteData.drop.cta}
             </button>
           </div>

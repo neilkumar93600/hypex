@@ -5,7 +5,7 @@ import { siteData } from "@/data/siteData";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const collectionAccents = ["#FFD400", "#E10600", "#FFFFFF"];
+const collectionAccents = ["#FFFFFF", "#E5E5E5", "#FFFFFF"];
 
 export default function CollectionPreview() {
   return (
@@ -21,7 +21,7 @@ export default function CollectionPreview() {
           viewport={{ once: true }}
           className="text-4xl md:text-6xl font-black uppercase text-white"
         >
-          Collections <span className="text-[#FFD400]">.</span>
+          Collections <span className="text-[#FFFFFF]">.</span>
         </motion.h2>
       </div>
 
@@ -63,7 +63,7 @@ export default function CollectionPreview() {
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                <span className="text-[#FFD400] text-[10px] font-bold tracking-[0.3em] uppercase mb-3 block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-[#FFFFFF] text-[10px] font-bold tracking-[0.3em] uppercase mb-3 block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Explore Collection
                 </span>
                 <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-white leading-none mb-2">
@@ -78,7 +78,7 @@ export default function CollectionPreview() {
 
               {/* Hover Arrow */}
               <div className="absolute top-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                <ArrowRight className="w-6 h-6 text-[#FFD400] -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
+                <ArrowRight className="w-6 h-6 text-[#FFFFFF] -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
               </div>
 
               {/* Accent line on hover */}
