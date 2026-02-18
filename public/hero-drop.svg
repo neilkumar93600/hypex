@@ -1,0 +1,5 @@
+﻿<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#0a0a0a"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="40" fill="#ff3333" text-anchor="middle" dominant-baseline="middle">VOID // DROP 047</text>
+  <rect x="10%" y="10%" width="80%" height="80%" fill="none" stroke="#ff3333" stroke-width="2" stroke-dasharray="10,5"/>
+</svg>
